@@ -54,4 +54,6 @@ public class Libro {
 		this.editorial = editorial;
 	}
 
+	
+
 }

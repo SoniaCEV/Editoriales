@@ -17,8 +17,8 @@ public class Editorial {
 	@Column(name="nonbre")
 	private String nombre;
 	
-	@Column(name="year")
-	private int year;
+	@Column(name="anio")
+	private int anio;
 	
 	@OneToMany (mappedBy="editorial")
 	@JsonIgnoreProperties({"editorial"})
@@ -40,12 +40,13 @@ public class Editorial {
 		this.nombre = nombre;
 	}
 
-	public int getYear() {
-		return year;
+	
+	public int getAnio() {
+		return anio;
 	}
 
-	public void setYear(int year) {
-		this.year = year;
+	public void setAnio(int anio) {
+		this.anio = anio;
 	}
 
 	public List<Libro> getLibros() {
@@ -55,4 +56,5 @@ public class Editorial {
 	public void setLibros(List<Libro> libros) {
 		this.libros = libros;
 	}
+
 }

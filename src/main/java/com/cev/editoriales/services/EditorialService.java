@@ -26,5 +26,4 @@ public class EditorialService {
 		return editorialRepository.findById(cif);
 	}
 	
-
 }
